@@ -1,0 +1,61 @@
+<ion-content no-bounce fullscreen="true">
+    <div class="overlay">
+
+        <div class="logo-wrap" padding-vertical>
+            <div text-center class="logo">
+                <img src="assets/img/logo.png" alt="avatar">
+            </div>
+        </div>
+
+
+        <ion-list text-center margin-horizontal class="round-box">
+            <ion-item text-center class="mb-10">
+                <ion-input type="text" placeholder="First Name" text-center></ion-input>
+            </ion-item>
+            <ion-item text-center class="mb-10">
+                <ion-input type="text" placeholder="Last Name" text-center></ion-input>
+            </ion-item>
+            <ion-item text-center class="mb-10">
+                <ion-input type="email" placeholder="Email" text-center></ion-input>
+            </ion-item>
+
+            <ion-item text-center class="mb-10">
+                <ion-input type="tel" placeholder="Phone Number" text-center></ion-input>
+            </ion-item>
+
+            <ion-item text-center class="mb-10">
+                <ion-input type="text" placeholder="Password" text-center></ion-input>
+            </ion-item>
+
+            <ion-item class="mb-20">
+                <ion-label>Gender</ion-label>
+                <ion-select [(ngModel)]="gender" interface="popover">
+                    <ion-option value="f">Female</ion-option>
+                    <ion-option value="m">Male</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-row>
+                <ion-col margin-left col-2>
+                    <ion-item class="term">
+                        <ion-checkbox item-left color="light" checked="false"></ion-checkbox>
+                    </ion-item>
+                </ion-col>
+                <ion-col class="term" col-9>
+                    <p item-right (click)="termsmodal()">I accept the terms and conditions</p>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+
+        <div text-center margin-horizontal class="mb-20">
+
+            <button ion-button class="btn main-btn pop-in" (tap)="gotohome()">SIGN UP</button>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer class="login-footer">
+    <div class="bottom-part">
+        <p text-center class="link" (click)="backLogin()">Already registered? login</p>
+    </div>
+
+</ion-footer>

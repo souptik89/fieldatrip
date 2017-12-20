@@ -1,0 +1,43 @@
+<ion-content no-bounce>
+
+    <div class="overlay">
+
+        <div class="logo-wrap" padding-vertical>
+            <div text-center class="logo">
+                <img src="assets/img/logo.png" alt="avatar">
+            </div>
+        </div>
+
+        <ion-list text-center margin-horizontal class="round-box">
+
+            <ion-item text-center class="ph mb-10">
+                <ion-input type="text" placeholder="User name or Email" text-center></ion-input>
+            </ion-item>
+
+            <ion-item text-center class="pass mb-20">
+                <ion-input type="password" placeholder="Password" text-center></ion-input>
+            </ion-item>
+
+        </ion-list>
+
+
+
+        <div text-center margin-horizontal class="mb-20">
+
+            <button ion-button class="btn main-btn pop-in" (tap)="gotohome()">SIGN IN</button>
+        </div>
+        <div text-center margin-horizontal>
+            <button ion-button class="btn fb-btn pop-in" (tap)="gotohome()">
+        <img src="assets/img/facebook-logo.svg" />Continue with facebook</button>
+        </div>
+
+
+    </div>
+</ion-content>
+<ion-footer class="login-footer">
+    <div class="bottom-part">
+        <p float-left text-center class="link" (tap)="forgotPass()">Forgot Password?</p>
+        <p float-right text-center class="link" (tap)="registration()">Register Now</p>
+    </div>
+
+</ion-footer>

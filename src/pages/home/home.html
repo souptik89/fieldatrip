@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list class="group-list">
+        <ion-list-header>
+            My groups
+        </ion-list-header>
+
+        <ion-item-sliding>
+            <ion-item>
+                <ion-icon name="people" item-left></ion-icon>
+                <div class="texts">
+                    <h2>Test group</h2>
+                    <p> Institution</p>
+                    <small>testing group</small>
+                </div>
+            </ion-item>
+
+            <ion-item-options>
+                <button ion-button color="danger" (click)="removeItem()"><ion-icon name="trash"></ion-icon> Delete</button>
+            </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+            <ion-item>
+                <ion-icon name="people" item-left></ion-icon>
+                <div class="texts">
+                    <h2>Test group</h2>
+                    <p> Institution</p>
+                    <small>testing group</small>
+                </div>
+            </ion-item>
+
+            <ion-item-options>
+                <button ion-button color="danger" (click)="removeItem()"><ion-icon name="trash"></ion-icon> Delete</button>
+            </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+            <ion-item>
+                <ion-icon name="people" item-left></ion-icon>
+                <div class="texts">
+                    <h2>Test group</h2>
+                    <p> Institution</p>
+                    <small>testing group</small>
+                </div>
+            </ion-item>
+
+            <ion-item-options>
+                <button ion-button color="danger" (click)="removeItem()"><ion-icon name="trash"></ion-icon> Delete</button>
+            </ion-item-options>
+        </ion-item-sliding>
+
+    </ion-list>
+    <ion-fab right bottom>
+        <button ion-fab margin-right margin-bottom><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>
