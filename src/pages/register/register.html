@@ -1,4 +1,4 @@
-<ion-content no-bounce fullscreen="true">
+<ion-content no-bounce>
     <div class="overlay">
 
         <div class="logo-wrap" padding-vertical>
@@ -6,7 +6,6 @@
                 <img src="assets/img/logo.png" alt="avatar">
             </div>
         </div>
-
 
         <ion-list text-center margin-horizontal class="round-box">
             <ion-item text-center class="mb-10">
@@ -29,7 +28,7 @@
 
             <ion-item class="mb-20">
                 <ion-label>Gender</ion-label>
-                <ion-select [(ngModel)]="gender" interface="popover">
+                <ion-select [(ngModel)]="gender">
                     <ion-option value="f">Female</ion-option>
                     <ion-option value="m">Male</ion-option>
                 </ion-select>

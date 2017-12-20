@@ -1,0 +1,39 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>create group</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-bounce>
+    <ion-list text-center margin-horizontal class="round-box">
+
+        <ion-item stacked class="mb-10">
+            <ion-label>Group Name</ion-label>
+            <ion-input type="text" placeholder="Type group name" text-center></ion-input>
+        </ion-item>
+
+        <ion-item class="mb-10">
+            <ion-label stacked>Group Type</ion-label>
+            <ion-select [(ngModel)]="gtype">
+                <ion-option value="inst">Institution</ion-option>
+                <ion-option value="club">Club</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item text-center class="mb-20">
+            <ion-textarea rows="3" placeholder="Enter a description"></ion-textarea>
+        </ion-item>
+
+    </ion-list>
+
+
+
+    <div text-center margin-horizontal class="mb-20">
+
+        <button ion-button class="btn main-btn pop-in" (tap)="gotohome()">Create</button>
+    </div>
+
+</ion-content>

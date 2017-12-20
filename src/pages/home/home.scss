@@ -67,3 +67,39 @@ page-home {
         }
     }
 }
+
+
+/* footer start */
+
+.authors {
+    ion-segment {
+        box-shadow: 0px 2px 5px #888888;
+    }
+    .segment-md .segment-button,
+    .segment-ios .segment-button {
+        background-color: #888888;
+        border-radius: 0px !important;
+        border: none;
+        height: 4.5rem;
+        line-height: 4.2rem;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.4rem;
+        opacity: 1;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+    .segment-md .segment-button.activated,
+    .segment-md .segment-button.segment-activated,
+    .segment-ios .segment-button.segment-activated {
+        border-bottom: 3px solid $red;
+        background-color: #fff;
+        border-radius: 0px;
+        color: $red;
+        font-size: 1.57rem;
+    }
+    .segment-ios .segment-button:hover:not(.segment-activated) {
+        background-color: $red;
+        border-bottom: 3px solid $red;
+    }
+}
