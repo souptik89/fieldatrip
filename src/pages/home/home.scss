@@ -37,14 +37,14 @@ page-home {
             }
             .item-inner {
                 margin-left: 0px;
-                border-bottom: 1px solid #dedede;
+                border-bottom: 1px solid $itembottomborder;
                 ion-label {
                     margin: 11px 8px 10px 0;
                 }
             }
             .input-wrapper {
                 h2 {
-                    color: #131313;
+                    color: #333333;
                     text-transform: capitalize;
                 }
                 p {

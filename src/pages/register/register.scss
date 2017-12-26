@@ -40,10 +40,12 @@ page-register {
                 padding: 0px 8px;
                 border: none;
                 background-color: #fff;
+                font-weight: normal;
                 .input-wrapper {
                     border-bottom: none;
                     ion-label {
                         color: #878787;
+                        font-weight: normal;
                     }
                 }
             }
@@ -52,6 +54,7 @@ page-register {
         .select-text,
         .text-input {
             color: #212121;
+            font-weight: normal;
         }
     }
     .term {

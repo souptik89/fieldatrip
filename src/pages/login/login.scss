@@ -53,13 +53,20 @@ page-login {
                 padding: 0px 8px;
                 border: none;
                 background-color: #fff;
+                font-weight: normal;
                 .input-wrapper {
                     border-bottom: none;
+                    font-weight: normal;
+                    ion-label {
+                        color: #878787;
+                        font-weight: normal;
+                    }
                 }
             }
         }
         .text-input {
             color: #212121;
+            font-weight: normal;
         }
     }
     .login-footer {
