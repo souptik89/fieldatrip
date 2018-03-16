@@ -1,4 +1,4 @@
-page-creategroup {
+page-editgroup {
     .list-ios>.item-block:first-child,
     .list-ios>.item-block:last-child {
         border: none;
@@ -30,12 +30,19 @@ page-creategroup {
                 }
             }
         }
-        .ion-select,
-        .select-text,
-        .text-input {
-            color: #212121;
-            font-weight: normal;
-            font-size: 1.5rem;
+    }
+}
+
+/* footer buttons style */
+
+.footer-btn {
+    .btn-group {
+        display: flex;
+        .main-btn {
+            width: 50%;
+        }
+        .main-btn:last-child {
+            border-left: 1px solid $red;
         }
     }
 }

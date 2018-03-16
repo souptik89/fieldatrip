@@ -7,6 +7,9 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { CreategroupPage } from '../pages/creategroup/creategroup';
+import { EditgroupPage } from '../pages/editgroup/editgroup';
+import { GroupdetailPage } from '../pages/groupdetail/groupdetail';
+import { ClassdetailPage } from '../pages/classdetail/classdetail';
 
 
 
@@ -16,7 +19,7 @@ import { CreategroupPage } from '../pages/creategroup/creategroup';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = HomePage;
 
   pages: Array<{ icon: any, title: string, component: any }>;
   mPages: Array<{ icon: any, title: string, component: any }>;

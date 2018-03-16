@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CreategroupPage } from '../creategroup/creategroup';
-
+import { EditgroupPage } from '../editgroup/editgroup';
+import { GroupdetailPage } from '../groupdetail/groupdetail';
 
 @IonicPage()
 @Component({
@@ -19,5 +20,8 @@ export class HomePage {
   }
   opencreate() {
     this.navCtrl.push(CreategroupPage);
+  }
+  groupdetail() {
+    this.navCtrl.push(GroupdetailPage);
   }
 }

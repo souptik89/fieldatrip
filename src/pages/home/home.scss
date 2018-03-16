@@ -12,13 +12,13 @@ page-home {
         .list-header-ios {
             border-top: none;
             border-bottom: 1px solid #dedede;
-            color: #888888;
+            color: $list-header;
             margin-bottom: 0px;
             .item-inner {
                 border: none;
             }
             .label {
-                color: #888888;
+                color: $list-header;
                 border: none;
             }
         }
@@ -26,8 +26,8 @@ page-home {
         .item-block {
             ion-icon {
                 margin-right: 16px;
-                color: #f969aa;
-                border: 1px solid #f969aa;
+                color: $mainbtn;
+                border: 1px solid $mainbtn;
                 border-radius: 50%;
                 font-size: 2.1em;
                 width: 58px;
@@ -44,15 +44,15 @@ page-home {
             }
             .input-wrapper {
                 h2 {
-                    color: #333333;
+                    color: $item-header;
                     text-transform: capitalize;
                 }
                 p {
-                    color: #b6b6b6;
+                    color: $item-sub-title;
                     text-transform: capitalize;
                 }
                 small {
-                    color: #7e7e7e;
+                    color: $item-small-title;
                 }
             }
         }
@@ -60,14 +60,15 @@ page-home {
     ion-fab {
         .fab-md,
         .fab-ios {
-            background-color: #f969aa;
+            background-color: $mainbtn;
             color: #fff;
-            font-size: 1.5rem;
             padding: 5px;
+            ion-icon {
+                font-size: 4.0rem;
+            }
         }
     }
 }
-
 
 /* footer start */
 
@@ -77,7 +78,7 @@ page-home {
     }
     .segment-md .segment-button,
     .segment-ios .segment-button {
-        background-color: #888888;
+        background-color: $red;
         border-radius: 0px !important;
         border: none;
         height: 4.5rem;
@@ -93,7 +94,7 @@ page-home {
     .segment-md .segment-button.segment-activated,
     .segment-ios .segment-button.segment-activated {
         border-bottom: 3px solid $red;
-        background-color: #fff;
+        background-color: $segment-active;
         border-radius: 0px;
         color: $red;
         font-size: 1.57rem;

@@ -7,6 +7,9 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { CreategroupPage } from '../pages/creategroup/creategroup';
+import { EditgroupPage } from '../pages/editgroup/editgroup';
+import { GroupdetailPage } from '../pages/groupdetail/groupdetail';
+import { ClassdetailPage } from '../pages/classdetail/classdetail';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,7 +21,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     LoginPage,
     RegisterPage,
-    CreategroupPage
+    CreategroupPage,
+    EditgroupPage,
+    GroupdetailPage,
+    ClassdetailPage
 
   ],
   imports: [
@@ -26,14 +32,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IonicModule.forRoot(MyApp, {
       pageTransition: 'ios-transition',
       swipeBackEnabled: true,
-      tabsHideOnSubPages: true
+      tabsHideOnSubPages: false
     }),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage, RegisterPage, CreategroupPage
+    LoginPage, RegisterPage,
+    CreategroupPage,
+    EditgroupPage,
+    GroupdetailPage,
+    ClassdetailPage
   ],
   providers: [
     StatusBar,

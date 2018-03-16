@@ -52,7 +52,6 @@
     font-feature-settings: 'liga';
 }
 
-
 /* fonts  */
 
 button,
@@ -89,6 +88,16 @@ button,
     margin-bottom: 20px;
 }
 
+/* =======header style=========== */
+
+.header-md::after {
+    background: none;
+}
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border: none;
+}
+
 ion-navbar,
 ion-navbar .toolbar-background {
     background: linear-gradient(to right, #fa6cb1 0%, #de3d40 100%) !important;
@@ -98,6 +107,7 @@ ion-navbar .toolbar-background {
         font-weight: 300;
         font-size: 1.7rem;
         color: #fff;
+        text-transform: capitalize;
     }
     ion-icon,
     .material-icons {
@@ -106,6 +116,12 @@ ion-navbar .toolbar-background {
     }
 }
 
+/* =====page style==== */
+
+.content,
+.scroll-content {
+    font-family: 'quicksandregular';
+}
 
 /* =====side bar====== */
 
