@@ -10,6 +10,7 @@ import { CreategroupPage } from '../pages/creategroup/creategroup';
 import { EditgroupPage } from '../pages/editgroup/editgroup';
 import { GroupdetailPage } from '../pages/groupdetail/groupdetail';
 import { ClassdetailPage } from '../pages/classdetail/classdetail';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 
@@ -19,7 +20,7 @@ import { ClassdetailPage } from '../pages/classdetail/classdetail';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = ProfilePage;
 
   pages: Array<{ icon: any, title: string, component: any }>;
   mPages: Array<{ icon: any, title: string, component: any }>;

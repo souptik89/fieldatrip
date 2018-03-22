@@ -10,6 +10,7 @@ import { CreategroupPage } from '../pages/creategroup/creategroup';
 import { EditgroupPage } from '../pages/editgroup/editgroup';
 import { GroupdetailPage } from '../pages/groupdetail/groupdetail';
 import { ClassdetailPage } from '../pages/classdetail/classdetail';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,7 +25,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CreategroupPage,
     EditgroupPage,
     GroupdetailPage,
-    ClassdetailPage
+    ClassdetailPage,
+    ProfilePage
 
   ],
   imports: [
@@ -43,7 +45,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CreategroupPage,
     EditgroupPage,
     GroupdetailPage,
-    ClassdetailPage
+    ClassdetailPage, ProfilePage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,100 @@
+page-profile {
+    .top-wrap {
+        background: linear-gradient(to right, #fa6cb1 0%, #de3d40 100%) !important;
+        background-color: #F766A3;
+        min-height: 12rem;
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        .Profile_name {
+            color: #fff;
+            font-size: 16px;
+            font-family: 'quicksandregular';
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            line-height: 28px;
+            text-transform: uppercase;
+        }
+        .profile_image {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            border: 2px solid #7c1a3d;
+            /*-moz-border-image: -moz-linear-gradient(left, #7c1a3d 0%, #bc3f32 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #7c1a3d 0%, #bc3f32 100%);
+    border-image: linear-gradient(to right, #7c1a3d 0%, #bc3f32 100%);
+    border-image-slice: 1;*/
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            bottom: -50px;
+            overflow: hidden;
+        }
+        .close_lock {
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            position: absolute;
+            left: 40px;
+            bottom: 15px;
+            background: none;
+            border-radius: 100%;
+            padding: 0;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            span {
+                padding: 8px;
+            }
+        }
+        .close_lock img {
+            max-width: 100%;
+            height: auto;
+        }
+        .edit_profile {
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            position: absolute;
+            right: 40px;
+            bottom: 15px;
+            background: none;
+            border-radius: 100%;
+            padding: 0;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            span {
+                padding: 8px;
+            }
+        }
+        .edit_profile img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .button-box-two {
+        width: 100%;
+        padding: 0px 5px;
+        margin-top: 65px;
+        .box-wrap {
+            .row {
+                border-bottom: 1px solid $itembottomborder;
+                padding: 6px 0;
+                .col[col-5] {
+                    padding: 5px 0px;
+                }
+                label {
+                    color: $red;
+                    font-size: 14px;
+                    margin-left: 7px;
+                    text-align: left;
+                    display: inline-block;
+                    text-transform: capitalize;
+                }
+                p {
+                    margin: 0;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
